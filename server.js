@@ -41,5 +41,5 @@ app.get('/getSpInfo', function (req, res) {
 })
 
 app.get('/', function (req, res) {
-	res.send("Hello " + info.id + ", " + info.nodeId + ", " + info.host)
+	res.send(info)
 })
