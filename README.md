@@ -24,7 +24,7 @@ CMD tail -f /dev/null
 docker build -t registry.cn-shanghai.aliyuncs.com/shuzhi/NAME:TAG .
 
 # Run a container and start node server
-docker run -d --name containerName -p 7000:7000 registry.cn-shanghai.aliyuncs.com/shuzhi/NAME:TAG node server.js --stream-user-id shanglu --stream-app-id 4186 --stream-node-id 3eb9eb409bd211e98813ade941a446cb --stream-host spapi.xuelangyun.com
+docker run -d --name containerName -p 7000:7000 registry.cn-shanghai.aliyuncs.com/shuzhi/NAME:TAG node server.js --stream-user-id test --stream-app-id 12345 --stream-node-id 3eb9eb4acdsaf234234234sdf --stream-host abc.abc.com
 
 # Test in your local
 http://localhost:7000/index.html
