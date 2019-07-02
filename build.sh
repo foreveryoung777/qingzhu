@@ -1,7 +1,7 @@
 #!/bin/bash
 
-source Config
+source config
 
-image=registry.cn-shanghai.aliyuncs.com/shuzhi/hetu_express:${VERSION}
-docker build -f Dockerfile -t ${IMAGE_NAME}  .
-docker push  ${IMAGE_NAME}
+image=registry.cn-shanghai.aliyuncs.com/shuzhi/${IMAGE_NAME} :${VERSION}
+docker build -f Dockerfile -t ${image}  .
+docker push  ${image}
