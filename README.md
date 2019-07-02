@@ -11,9 +11,13 @@ cp ...
 
 # Create a new Dockerfile in the new directory
 FROM registry.cn-shanghai.aliyuncs.com/shuzhi/base_ui_express:0.0.1
+
 WORKDIR /home/app/
+
 COPY dist /home/app/dist
+
 EXPOSE 7000
+
 CMD tail -f /dev/null
 
 # Build a image
