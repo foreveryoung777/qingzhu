@@ -4,11 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "cd sample && bash build.sh && bash test.sh",
     "start": "node server.js",
     "docker":"bash docker/build.sh"
   },
-  "author": "",
+  "author": "ryanaltair",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"

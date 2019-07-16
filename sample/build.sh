@@ -1,2 +1,1 @@
-imagename=hellosuanpan:latest
-docker build -f Dockerfile -t ${imagename}  .
+rm -r docker/dist  && cp -r dist docker/ && cd docker && bash build.sh
