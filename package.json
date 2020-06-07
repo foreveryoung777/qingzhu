@@ -5,11 +5,14 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "docker":"bash docker/build.sh"
+    "docker": "bash docker/build.sh"
   },
   "author": "ryanaltair",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "suanpan_node_sdk": "^0.17.0"
   }
 }
