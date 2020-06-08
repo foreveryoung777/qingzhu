@@ -29,15 +29,11 @@ allArguments.forEach((val, index) => {
   }
 });
 
-const trim = (str) => {
-	return str.slice(str.indexOf("'") + 1, str.lastIndexOf("'"));
-}
-
 const data = {
   appId: allArguments[appIdIndex],
   nodeId: allArguments[nodeIdIndex],
-  url: trim(allArguments[hostIndex]),
-  parameters: { backendUrl: trim(allArguments[backendUrlIndex]) },
+  url: allArguments[hostIndex],
+  parameters: { backendUrl: allArguments[backendUrlIndex] },
 };
 
 console.log(
