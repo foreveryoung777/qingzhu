@@ -30,7 +30,7 @@ allArguments.forEach((val, index) => {
 });
 
 const trim = (str) => {
-	return str.slice(str.indexOf("'") + 1, str.lastIndexOf("'"));
+	return str.slice(str.indexOf("'") + 1, str.lastIndexOf("'") + 1);
 }
 
 const data = {
