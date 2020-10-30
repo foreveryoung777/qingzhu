@@ -11,6 +11,7 @@ let appIdIndex = -1;
 let nodeIdIndex = -1;
 let hostIndex = -1;
 let backendUrlIndex = -1;
+let loginUrlIndex = -1;
 
 let allArguments = process.argv;
 
@@ -27,13 +28,16 @@ allArguments.forEach((val, index) => {
   if (val == "--backendUrl") {
     backendUrlIndex = index + 1;
   }
+  if (val == "--loginUrl") {
+    loginUrlIndex = index + 1;
+  }
 });
 
 const data = {
   appId: allArguments[appIdIndex],
   nodeId: allArguments[nodeIdIndex],
   url: allArguments[hostIndex],
-  parameters: { backendUrl: allArguments[backendUrlIndex] },
+  parameters: { backendUrl: allArguments[backendUrlIndex], loginUrl: allArguments[loginUrlIndex] },
 };
 
 console.log(
